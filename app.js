@@ -1,6 +1,6 @@
 const express = require('express')
 // const parseurl = require('parseurl')
-// const session = require('express-session')
+const session = require('express-session')
 const mustacheExpress = require('mustache-express')
 const bodyParser = require('body-parser')
 
@@ -17,7 +17,7 @@ app.use(function (req, res, next) {
 })
 
 app.get('/', function (req,res) {
-  res.render('login')
+  res.render('home')
 
 })
 app.post('/login', function (req,res) {
