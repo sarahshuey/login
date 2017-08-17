@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sarahshuey/login/issues"
   },
-  "homepage": "https://github.com/sarahshuey/login#readme"
+  "homepage": "https://github.com/sarahshuey/login#readme",
+  "dependencies": {
+    "mustache": "^2.3.0"
+  }
 }
