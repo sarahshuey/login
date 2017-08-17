@@ -11,6 +11,12 @@ app.engine('mustache',mustacheExpress());
 app.set('views','./views')
 app.set('view engine', 'mustache')
 
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true
+}))
+
 app.use(function (req, res, next) {
   console.log('in interceptor');
   next()

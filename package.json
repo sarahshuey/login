@@ -19,6 +19,7 @@
   "homepage": "https://github.com/sarahshuey/login#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "express-session": "^1.15.5",
     "mustache": "^2.3.0"
   }
 }
