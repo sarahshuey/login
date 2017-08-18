@@ -6,13 +6,13 @@
   </head>
   <body>
     <h1>Login</h1>
+    {{#error}}
+    Please enter a valid password and username
+    {{/error}}
     <form class="" action="/login" method="post">
     <div>  <input type="text" name="username" placeholder="username"> </div>
     <div>  <input type="password" name="password" placeholder="password"> </div>
       <div> <button type="submit" name="button">Submit</button> </div>
     </form>
-    {{#error}}
-    Please enter a valid password and username
-    {{/error}}
   </body>
 </html>
